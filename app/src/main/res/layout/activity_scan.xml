@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".Scan"
+    android:id="@+id/mainView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/ipLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deviceName"
+            android:text="Nome"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/abc_primary_text_material_light"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/ipLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deviceName"
+            android:text="MAC"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/abc_primary_text_material_light"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/ipLabel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deviceName"
+            android:text="Estado"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/abc_primary_text_material_light"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+</LinearLayout>
